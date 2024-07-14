@@ -1,0 +1,30 @@
+.arc-carousel-img{
+    min-height: 500px;
+    aspect-ratio: 2;
+}
+
+.arc-card-carousel-img{
+    min-height: 150px;
+    aspect-ratio: 1.5;
+}
+
+.arc-row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.arc-col-eq-height {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+.cry{
+    background-color: aqua;
+    border: "5px solid red" !important;
+}
+
+.cry2{
+    background-color: green;
+    border: "5px solid red" !important;
+}
