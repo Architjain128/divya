@@ -18,10 +18,10 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark border-bottom border-body color-scheme-1" data-bs-theme="dark">
         <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#">
-            <img src="https://picsum.photos/200" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand cus-font-1" href="#">
+            <!-- <img src="https://picsum.photos/200" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
             DIVYA KOTHARI
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,20 +202,26 @@
                     <div class="carousel-item" data-bs-interval="3000">
                       <img src="./media/p1/11.png" class="d-block w-100 arc-card-carousel-img" alt="...">
                     </div>  
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="./media/p1/12.png" class="d-block w-100 arc-card-carousel-img" alt="...">
-                    </div>
                   </div>
                 </div>
               <!-- </div> -->
               <!-- <div class="col-md-8"> -->
-                <div class="card-body">
+                <div class="card-body" id="module">
                   <h5 class="card-title">Luxe Living</h5>
                   <p class="card-text">
-                    <span class="badge rounded-pill bg-dark">Residential Design</span>
-                    <span class="badge rounded-pill bg-dark">Luxury Duplex</span>
+                    <span class="badge rounded-pill bg-dark p-2">Residential Design</span>
+                    <span class="badge rounded-pill bg-dark p-2">Luxury Duplex</span>
                   </p>
-                  <p class="card-text">This luxury duplex villa area 6500 sqft. spans three floors, each covering 1,800 square feet, offering an expansive and elegant living experience. 
+                  
+
+                  <p class="card-text collapse multi-collapse show" id="multiCollapseExample1">This luxury duplex villa area 6500 sqft. spans three floors, each covering 1,800 square feet, offering an expansive and elegant living experience. 
+                    The ground floor features a spacious parking area and a beautifully landscaped garden, along with a large multipurpose hall designed for various 
+                    activities. A designer circular staircase, complemented by a stunning chandelier, provides a striking focal point while offering access to the upper 
+                    levels and a lift for convenience.
+
+                  </p>
+
+                  <p class="card-text collapse multi-collapse" id="multiCollapseExample1">This luxury duplex villa area 6500 sqft. spans three floors, each covering 1,800 square feet, offering an expansive and elegant living experience. 
                     The ground floor features a spacious parking area and a beautifully landscaped garden, along with a large multipurpose hall designed for various 
                     activities. A designer circular staircase, complemented by a stunning chandelier, provides a striking focal point while offering access to the upper 
                     levels and a lift for convenience.
@@ -224,7 +230,10 @@
                     dedicated parents' room. Additionally, a serene mandir, adorned in pristine white, adds a touch of tranquility to the space.
                     
                     The second floor is designed for family comfort, featuring three well-appointed bedrooms: a daughter's room, a son's room, and a guest bed
-                    room. This villa seamlessly blends luxury and functionality, creating an inviting atmosphere for both relaxation and entertainment</p>
+                    room. This villa seamlessly blends luxury and functionality, creating an inviting atmosphere for both relaxation and entertainment.
+                  </p>
+
+                  <button class="pro-1 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1"></button>
 
                 </div>
               <!-- </div> -->
@@ -270,17 +279,34 @@
                 <div class="card-body">
                   <h5 class="card-title">Rhythm & Roots</h5>
                   <p class="card-text">
-                    <span class="badge rounded-pill bg-dark">Commercial Design</span>
-                    <span class="badge rounded-pill bg-dark">Dance Studio</span>
+                    <span class="badge rounded-pill bg-dark p-2">Commercial Design</span>
+                    <span class="badge rounded-pill bg-dark p-2">Dance Studio</span>
                   </p>
-                  <p class="card-text"> Andheri West, had the opportunity to design a dance studio for a professional dance choreographer. The client 
+
+
+
+                  <p class="card-text collapse multi-collapse show" id="multiCollapseExample2">This luxury duplex villa area 6500 sqft. spans three floors, each covering 1,800 square feet, offering an expansive and elegant living experience. 
+                    Andheri West, had the opportunity to design a dance studio for a professional dance choreographer. The client 
+                    envisioned a unique 360-degree black studio, complete with black flooring and ceiling, as well as a space featuring four distinct walls that 
+                    harmoniously complement each other. 
+                  </p>
+
+                  <p class="card-text collapse multi-collapse" id="multiCollapseExample2">
+                    Andheri West, had the opportunity to design a dance studio for a professional dance choreographer. The client 
                     envisioned a unique 360-degree black studio, complete with black flooring and ceiling, as well as a space featuring four distinct walls that 
                     harmoniously complement each other. To meet these requirements, I created a dynamic environment with a variety of textures and colors: 
                     one wall showcases a concrete brick texture, another features white MDF panel grooving, a third is adorned with teal blue wallpaper, and 
                     the fourth wall serves as a striking mirror wall. The 360-degree black studio is enhanced by a black grid ceiling, black vinyl flooring, and 
                     curtains on all four walls, resulting in a stunning and cohesive design. 
                     
-                    The final outcome not only fulfills the client's vision but also creates an inspiring space for dance, leading to complete satisfaction with the design</p>
+                    The final outcome not only fulfills the client's vision but also creates an inspiring space for dance, leading to complete satisfaction with the design
+                  </p>
+
+                  <button class="pro-1 btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"></button>
+
+
+
+                  <p class="card-text"> </p>
            
 
                 </div>
@@ -307,7 +333,7 @@
           <div class="col-sm-6 mb-3">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">BRIEFING</h5>
+                <h4 class="card-title text-sm-start text-center">BRIEFING</h4>
                 <p class="card-text">We begin with an exhaustive questionnaire to fully understand the client’s needs and expectations. The most important of all steps.
                 </p>
               </div>
@@ -316,7 +342,7 @@
           <div class="col-sm-6 mb-3">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">DESIGN</h5>
+                <h4 class="card-title text-sm-start text-center">DESIGN</h4>
                 <p class="card-text">Translating the brief into the blueprint of what is to come. From moodboards to models, we design every last detail.
                 </p>
               </div>
@@ -325,7 +351,7 @@
           <div class="col-sm-6 mb-3">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">EXECUTION</h5>
+                <h4 class="card-title text-sm-start text-center">EXECUTION</h4>
                 <p class="card-text">Bringing our designs to life by building it from the ground up. As we only take on end-to-end projects, everything from structural design to decor is executed in this phase.
                 </p>
               </div>
@@ -334,7 +360,7 @@
           <div class="col-sm-6 mb-3">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">HANDOVER</h5>
+                <h4 class="card-title text-sm-start text-center">HANDOVER</h4>
                 <p class="card-text">The most anticipated moment, where we hand our clients the keys to their new space, all ready to move in. 
                 </p>
               </div>
@@ -376,7 +402,7 @@
                             </h4>
                           </div>
                           <div class="col">
-                            <p class="p-1 m-0">Mumbai, India</p>
+                            <a class="p-1 m-0">Mumbai, India</a>
                           </div>
                         </div>
 

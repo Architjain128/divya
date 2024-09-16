@@ -47,20 +47,40 @@
     font-family: "Trirong", serif;
 }
 
-.cus-font-2, h3, h4, h5, h6 {
+.cus-font-2, h3, h4, h5 {
     font-family: "Maitree", serif;
 }
 
-.cus-font-3, p{
+.cus-font-3, h6, p{
     font-family: "Palanquin", serif;
+    font-size:large;
 }
 
 a{
     text-decoration: none !important; 
     color: inherit !important; 
+    font-size:smaller;
 }
 
 .overlay-bg{
     background-color:#00000050 !important;
     border-radius: 20px !important;
 }
+
+.color-scheme-1 {
+    background-color:#000 !important;
+    color:white !important;
+}
+
+
+
+
+/* Default content */
+.pro-1[aria-expanded="true"]::before {
+    content: "Show Less";
+}
+
+.pro-1[aria-expanded="false"]::before {
+    content: "Show More";
+}
+
