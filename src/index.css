@@ -72,9 +72,6 @@ a{
     color:white !important;
 }
 
-
-
-
 /* Default content */
 .pro-1[aria-expanded="true"]::before {
     content: "Show Less";
@@ -84,3 +81,34 @@ a{
     content: "Show More";
 }
 
+
+.pro-1-par{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.pro-1{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cus-div-bl-r{
+    background-color:#000;
+    color : white;
+    padding: 30px 40px;
+    margin: 30px 0px 50px 0px;
+    border-radius:20px;
+}
+
+.cus-insta-btn{
+    border:white 2px solid !important;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.cus-insta-btn:hover, .cus-insta-btn:active{
+    color:#000 !important;
+    border:black 2px dashed !important;
+
+}
