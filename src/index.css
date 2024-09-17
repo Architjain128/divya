@@ -1,3 +1,18 @@
+body{
+    overflow-x: hidden;
+}
+
+img {
+    object-fit: cover;
+}
+
+.bl-m{
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    translate: -150% 10px;
+}
+
 .arc-carousel-img{
     min-height: 500px;
     aspect-ratio: 2;
@@ -98,17 +113,151 @@ a{
     color : white;
     padding: 30px 40px;
     margin: 30px 0px 50px 0px;
-    border-radius:20px;
+    border-radius:30px;
 }
 
-.cus-insta-btn{
-    border:white 2px solid !important;
-    font-size: larger;
+@keyframes shakeText {
+    0% {
+        transform: translateX(-2px);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Button with border and background */
+.cus-insta-btn {
+    position: relative;
+    border: 2px solid transparent; /* Make space for the gradient border */
+    background: #000; /* Button background color */
+    color: white; /* Default text color */
     font-weight: 600;
+    font-size: larger;
+    transition: color 0.3s;
+    background-clip: padding-box;
 }
 
-.cus-insta-btn:hover, .cus-insta-btn:active{
-    color:#000 !important;
-    border:black 2px dashed !important;
 
+/* Overlay the gradient border effect */
+.cus-insta-btn::before {
+    content: '';
+    color: transparent;
+    position: absolute;
+    top: -4px; /* Adjust according to border width */
+    left: -4px; /* Adjust according to border width */
+    right: -4px; /* Adjust according to border width */
+    bottom: -4px; /* Adjust according to border width */
+    border-radius: inherit;
+    background: linear-gradient(45deg, #f06, #4a90e2); /* Gradient colors */
+    z-index: -1; /* Ensure it’s behind the button text */
 }
+
+.cus-insta-btn:hover {
+    position: relative;
+    background: #fff !important; /* Button background color */
+    color: black !important; /* Default text color */
+    font-weight: 600;
+    font-size: larger;
+    transition: color 0.3s;
+    z-index: 10;
+    background-clip: unset;
+}
+
+.cus-insta-btn:hover::before {
+    visibility: hidden;
+}
+
+.cus-3d-card {
+    border-radius: 10px;
+    transform: scale(1.1); /* Default transform */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cus-bg-footer{
+    background-color:#000;
+}
+
+.cus-txt-color{
+    color : white !important;
+}
+
+.cus-testimonial{
+    padding: 20px 0px 60px 0px;
+    text-decoration: wavy;
+    font-style: italic;
+}
+
+.contact-svg {
+    overflow: hidden;
+    rotate: 180deg;
+    margin-bottom: -20px;
+    z-index: -1;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23000"><path d="M0 0v90.2C49.7 99.9 105 82 160 65c75.5-23.3 145.5-22.4 222-3 63 16 119 14 173-8 79.5-32.4 156.2-27.6 240-10 82.6 17.4 143-1 205-31.7V0H0Z"></path></svg>');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent repeating */
+    /* background-position: center; Center the background image */
+    min-height: 150px;
+    height: 100%; /* Set a height for the element */
+    width: 120%; /* Set width as needed */
+  }
+
+  .stack-container {
+    position: relative;
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .cus-about-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%;
+    z-index: 1; /* Ensure SVG is on top */
+    margin-left: -25%;
+    margin-top: -20%;
+  }
+  
+  .stack-container img {
+    border-radius:150% !important;
+    position: relative;
+    width: 80%;
+    height: auto; /* Ensure the image scales properly */
+    z-index: 5; /* Ensure image is below SVG */
+  }
+
+  .stack-container-sm {
+    position: relative;
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .cus-about-svg-sm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    z-index: 1; /* Ensure SVG is on top */
+    margin-left: -7%;
+    margin-top: -10%;
+  }
+  
+  .stack-container-sm img {
+    border-radius:150% !important;
+    position: relative;
+    width: 80%;
+    height: auto;
+    z-index: 5; /* Ensure image is below SVG */
+  }
+  
