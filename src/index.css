@@ -78,7 +78,7 @@ a{
 }
 
 .overlay-bg{
-    background-color:#00000050 !important;
+    background-color:#00000090 !important;
     border-radius: 20px !important;
 }
 
@@ -195,6 +195,11 @@ a{
     color : white !important;
 }
 
+.cus-txt-color-inv{
+    color : black !important;
+}
+
+
 .cus-testimonial{
     padding: 20px 0px 60px 0px;
     text-decoration: wavy;
@@ -261,3 +266,6 @@ a{
     z-index: 5; /* Ensure image is below SVG */
   }
   
+  .progress{
+    height: 5px;
+  }
