@@ -269,3 +269,50 @@ a{
   .progress{
     height: 5px;
   }
+
+
+  /* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #fff !important;
+	stroke-width: 2;
+}
+
+#bigTriangleColor {
+    background: #000;
+}
+
+/* Inverted rounded corners */
+.ss-style-invertedrounded {
+	/* margin-bottom: 40px; */
+	padding: 0 0 50px;
+	border-radius: 0 0 0 150px;
+}
+
+.ss-style-invertedrounded-bt,
+.ss-style-invertedrounded-bt-px{
+    position: absolute;
+    top:0;
+    right: 0;
+    content:" ";
+	/* margin-bottom: 40px; */
+	padding: 0 0 50px;
+    background: #000;
+    width: 150px;
+    height: 100px;
+    z-index: 15;
+}
+
+.ss-style-invertedrounded-bt-px {
+	border-radius: 0 150px 0 0;
+    background: #f8f9fa;
+    z-index: 20 !important;
+}
+
+.cus-no-bor{
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
