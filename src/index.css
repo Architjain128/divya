@@ -236,7 +236,7 @@ a{
   }
   
   .stack-container img {
-    border-radius:150% !important;
+    border-radius:15px !important;
     position: relative;
     width: 80%;
     height: auto; /* Ensure the image scales properly */
